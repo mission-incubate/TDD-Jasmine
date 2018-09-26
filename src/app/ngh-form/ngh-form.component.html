@@ -1,0 +1,47 @@
+<div id="ngh-form">	
+	<div class="white-card">
+		<div class="name-container">
+			<div>AT</div>
+			<span class="mt-20">Adam Telly</span>
+		</div>
+		<div class="flex-layout mt-20">
+			<div>
+				<mat-form-field class="mt-20" *ngFor="let options of dropDownOptions1">
+					<mat-select [placeholder]="options.title" (selectionChange)="changeOption($event.value, options.title)">
+						<mat-option [value]="name" *ngFor="let name of options.options">
+							{{name}}
+						</mat-option>
+					</mat-select>
+				</mat-form-field>
+			</div>
+			<p class="spacer"></p>
+			<div class="mt-20">
+			</div>		
+		</div> 	
+	</div>
+	
+	
+	<mat-accordion >
+		<mat-expansion-panel class="mt-20">
+			<mat-expansion-panel-header>
+				<mat-panel-title>Attachments</mat-panel-title>
+			</mat-expansion-panel-header>
+			<div>
+				<div style="display: flex;">
+					<p>Hey, you attach Images and Documents here</p>
+					<div class="spacer"></div>
+					<input style="display: none" type="file" (change)="onFileChanged($event)" #fileInput>
+					<mat-icon (click)="fileInput.click()">attachment1111</mat-icon>
+				</div>
+				<div class="attachments-container"></div>
+			</div>
+		</mat-expansion-panel>
+		<mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+		</mat-expansion-panel>
+	</mat-accordion>
+	
+	<div class="submit-button mt-20">
+		<button mat-stroked-button type="submit" (click)="nghFormSubmit()">Submit</button>
+	</div>		
+	<div class="mt-30"></div>
+</div>

@@ -1,0 +1,22 @@
+<div class="example-container">
+	<mat-toolbar color="primary" class="example-toolbar">
+		<div style="display: flex; flex: 1;">
+			<mat-icon class="menuIcon" (click)="snavP.toggle()"></mat-icon>	
+			<!-- <mat-icon>Safety Cards</mat-icon>			 -->
+		</div>
+		<div class="spacer-sidenavbar"></div>	
+		<div class="circular-name right"><span>Adam Telly</span></div>			
+	</mat-toolbar>
+	<mat-sidenav-container class="example-sidenav-container">
+		<mat-sidenav #snav [opened]='mobileQuery.matches ? false :true' [mode]="mobileQuery.matches ? 'over' : 'side'">
+			<mat-nav-list>
+				<a mat-list-item (click)="toggle(option.pathURL);" *ngFor="let option of sidebarOptions">
+					<mat-icon matListIcon>{{option.imageURL}}</mat-icon>{{option.value}}
+				</a>
+			</mat-nav-list>
+		</mat-sidenav>
+		<mat-sidenav-content>
+			<router-outlet></router-outlet>
+		</mat-sidenav-content>
+	</mat-sidenav-container>
+</div>

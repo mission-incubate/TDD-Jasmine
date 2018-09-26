@@ -1,0 +1,20 @@
+{
+    "SafetyCardDetails": {
+    "Title": "Exemple de traduction",
+    "Intro": "Bonjour je m'appelle Arthur, j'ai 42 ans.",    
+    "CardId": "Card Id Fr",
+    "Date": "Date Fr",
+    "DrillTeam": "Drill Team Fr",
+    "RigName": "Rig Name Fr",
+    "ReportType": "Report Type Fr",
+    "LifeSavingActions":"Life Saving Actions Fr",
+    "HazardIdentification":"Hazard Identification Fr",
+    "Description":"Description Fr",
+    "ActionTaken":"Action Taken Fr",
+    "SafeChoiceConversation":"Safe Choice Conversation Fr",
+    "Attachments":"Attachments Fr",
+    "FurtherAction":"Further action required to solve the Issue Fr",
+    "Location":"Location Fr",
+    "SuggestedActions":"Suggested Further Actions Fr"
+    }
+}

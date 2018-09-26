@@ -1,0 +1,21 @@
+
+{
+    "SafetyCardDetails": {
+    "Title": "Translation example",
+    "Intro": "Hello I am Arthur, I am 42 years old.",
+    "CardId": "Card Id",
+    "Date": "Date",
+    "DrillTeam": "Drill Team",
+    "RigName": "Rig Name",
+    "ReportType": "Report Type",
+    "LifeSavingActions":"Life Saving Actions",
+    "HazardIdentification":"Hazard Identification",
+    "Description":"Description",
+    "ActionTaken":"Action Taken",
+    "SafeChoiceConversation":"Safe Choice Conversation",
+    "Attachments":"Attachments",
+    "FurtherAction":"Further action required to solve the Issue",
+    "Location":"Location",
+    "SuggestedActions":"Suggested Further Actions"
+    }
+}

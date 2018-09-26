@@ -1,0 +1,72 @@
+#test-login {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+#test-login .flex-layout {
+    padding: 30px 80px 0px 50px;
+}
+
+.flex-layout :last-child {
+    color: #5a5a5a;
+    font-size: 18px;
+    font-family: emPrintSemiBold;
+}
+
+.logo {
+    width: 135px;
+    margin: auto;
+}
+
+.login-field-container {
+    padding: 20px 80px 0 80px;
+}
+
+.flex-layout .mat-form-field {
+    width: 110px;
+}
+
+#test-login .login-field-container {
+    display: flex;    
+    justify-content: flex-end;
+}
+
+#test-login .mat-form-field-appearance-legacy .mat-form-field-wrapper {
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.87);
+    border-radius: 5px;
+    width: 400px;
+}
+
+form div {
+    display: flex;
+    justify-content: center;
+}
+
+ 
+.sigin-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sigin-container a {
+    font-size: 14px;
+    font-family: emPrintRegular;
+    color: #0C479D;
+}
+
+.sigin-container a span {
+    font-size: 18px;
+    font-family: emPrintSemiBold;
+    color: #0C479D;
+}
+

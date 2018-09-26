@@ -1,0 +1,40 @@
+<div id="exxon-login">
+	<div class="flex-layout">
+		<mat-icon class="logo"></mat-icon>			
+		<div class="spacer-sidenavbar"></div>	
+		<div>
+			<h1 class="icomoon-home">\e900</h1>
+		</div>
+		<div>Language: 
+			<mat-form-field>
+				<mat-select placeholder="English">
+				<mat-option *ngFor="let language of languageOptions" [value]="language">{{language}}</mat-option>
+				</mat-select>
+			</mat-form-field>
+		</div>
+	</div>		  
+	<div class="login-field-container">			
+		<form novalidate (ngSubmit)="login()">
+			<p><u>Power User/Admin Login</u></p>
+			<mat-form-field>
+				<mat-icon class="email-icon"></mat-icon>
+				<input matInput placeholder="Email" [formControl]="emailFormControl"
+						[errorStateMatcher]="matcher" >
+				<mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+					Please enter a valid email address
+				</mat-error>
+				<mat-error *ngIf="emailFormControl.hasError('required')">Email is <strong>required</strong></mat-error>
+			</mat-form-field>
+
+			<mat-form-field class="example-full-width" >
+				<input matInput placeholder="Password" type="password">
+			</mat-form-field>
+			<p id="frgtPswrd">Forgot Password?</p>			
+			<div class="mt-20 sigin-container">
+				<button mat-stroked-button  type="submit">Sign In</button>
+				<a class="mt-20">Don't have an account?<span> Sign Up</span></a>
+			</div>			
+		</form>	
+	</div>
+	<div class=""></div>
+</div>

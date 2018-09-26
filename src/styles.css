@@ -1,0 +1,290 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+/** Included Fonts **/
+/* 
+@font-face {
+  font-family: 'icomoon2';
+  src:  url('/assets/fonts/icomoon.eot?327924#iefix') ,
+    url('/assets/fonts/icomoon.ttf?327924') ,
+    url('/assets/fonts/icomoon.woff?327924'),
+    url('/assets/fonts/icomoon.svg?327924#icomoon') ;
+}
+ */
+@font-face {
+  font-family: 'icomoon2'; 
+  src: url('/assets/fonts/icomoon.eot?#iefix'), /* Pretty Modern Browsers */
+  url('/assets/fonts/icomoon.svg') ,
+  url('/assets/fonts/icomoon.ttf') ,
+  url('/assets/fonts/icomoon.woff') ;
+}
+
+.icomoon-home {
+  font-family:'icomoon2';
+  color:'red';
+  font-size:3em;
+}
+
+
+@font-face {
+  font-family: 'emPrintBoldItalic'; 
+  src: url('/assets/fonts/EMprint W05 Bold Italic_web?#iefix'), /* Pretty Modern Browsers */
+  url('/assets/fonts/EMprint W05 Bold Italic_web.svg') ,
+  url('/assets/fonts/EMprint W05 Bold Italic_web.ttf') ,
+  url('/assets/fonts/EMprint W05 Bold Italic_web.woff') ;
+}
+
+@font-face {
+  font-family: 'emPrintBold'; 
+  src: url('/assets/fonts/EMprint W05 Bold_web.eot?#iefix') , /* Pretty Modern Browsers */
+  url('/assets/fonts/EMprint W05 Bold_web.svg') ,
+  url('/assets/fonts/EMprint W05 Bold_web.ttf') ,
+  url('/assets/fonts/EMprint W05 Bold_web.woff') ;
+ 
+}
+
+@font-face {
+  font-family: 'emPrintRegular'; 
+  src: url('/assets/fonts/EMprint W05 Regular_web.eot?#iefix'),
+  url('/assets/fonts/EMprint W05 Regular_web.svg'),
+  url('/assets/fonts/EMprint W05 Regular_web.ttf'),
+  url('/assets/fonts/EMprint W05 Regular_web.woff');
+}
+
+@font-face {
+  font-family: 'emPrintSemiBold'; 
+  src: url('/assets/fonts/EMprint W05 Semibold_web.eot?#iefix'), /* Pretty Modern Browsers */
+  url("/assets/fonts/EMprint W05 Semibold_web.svg"),
+  url("/assets/fonts/EMprint W05 Semibold_web.ttf") ,
+  url("/assets/fonts/EMprint W05 Semibold_web.woff");
+}
+
+
+
+@font-face {
+  font-family: 'emPrintSemiBoldItalic'; 
+  src: url('/assets/fonts/EMprint W05 Semibold Italic_web.eot?#iefix') , /* Pretty Modern Browsers */
+  url("/assets/fonts/EMprint W05 Semibold Italic_web.svg") ,
+  url("/assets/fonts/EMprint W05 Semibold Italic_web.ttf") ,
+  url("/assets/fonts/EMprint W05 Semibold Italic_web.woff") ;
+}
+
+/**login page css **/
+
+.login-field-container form p {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0px;
+  font-family: 'emPrintSemiBold';
+  font-size:18px;
+  color: #0C479D;
+}
+
+.mat-form-field-infix {
+  display: flex !important;
+}
+
+.login-field-container .mat-form-field-appearance-legacy .mat-form-field-label {
+  margin-left: 24px;
+}
+
+#frgtPswrd {
+  font-family: 'emPrintSemiBoldItalic';
+  font-size: 18px;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {   
+  margin: 0;
+  font-size: 16px !important;
+  color: #5a5a5a !important;
+}
+
+.basic-container {
+  padding: 30px;
+}
+
+.version-info {
+  font-size: 8pt;
+  float: right;
+}
+
+.name-container {
+  display: flex;
+}
+
+.name-container div {
+  background: #0C479D;
+  padding: 20px;
+  border-radius: 30px;
+  color: #fff;
+}
+
+.name-container span {
+  margin-left: 20px;
+  font-size: 18px;
+  color: #5a5a5a;
+  font-family: emPrintBold;
+}
+
+.example-toolbar .menuIcon {
+   display: none;
+}
+
+.spacer-sidenavbar {
+  flex-grow: 10;
+}
+
+@media (max-width: 575.98px) { 
+  .example-toolbar .menuIcon {
+    display: block;
+  }  
+} 
+
+.flex-layout {
+  display: flex !important;
+  flex-wrap: wrap;
+}
+
+.mt-20 {
+  margin-top: 20px !important;
+}
+
+.mt-30 {
+  margin-top: 30px !important;
+}
+
+.pd-20 {
+  padding: 20px;
+}
+
+.pd-30 {
+  padding: 30px;
+}
+
+/** RAdio Button CSS **/
+.mat-radio-button.mat-accent .mat-radio-inner-circle {
+  background-color: #0C479D;
+}
+
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+  border-color: #0C479D;
+}
+
+/** Button CSS **/
+button {
+  padding: 10px;
+  border-radius: 28.5px;
+  width: 250px;
+  background-color: #0C479D;
+  color: #fff;
+  font-size: 22px;
+  border: 0px;
+  height: 57px;
+  box-shadow: 0px 0px 6px 0px rgba(22, 22, 22, 1);
+}
+
+.mat-card-image {
+  padding: 20px;
+  
+  flex: 1;
+}
+
+.mat-card-details {
+  padding: 20px;  
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.mat-grid-list {
+  display:flex;
+  flex-wrap:wrap;
+  
+  
+}
+/**Text Field CSS **/
+.mat-form-field-appearance-legacy.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+  color : #0C479D;
+  font-size: 1em;
+}
+
+/**Dropdown CSS**/
+.mat-select-value {
+  color: #5a5a5a;
+  font-size: 16px !important;
+}
+
+.flex-layout mat-form-field {
+  font-size: 18px;
+  font-family: emPrintSemiBold;
+}
+
+/** Toolbar/Header **/
+.mat-toolbar-row, .mat-toolbar-single-row {
+  height: 68px;
+}
+
+.mat-card {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+}
+/** White card CSS **/
+.white-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 5px;
+}
+
+.mat-panel-title {
+  font-size: 16px;
+  color: #5a5a5a;
+}
+
+.further-action-block {
+  padding: 30px 30px 0px 30px;
+}
+
+.further-action-block p {
+  margin: 0px;
+}
+
+/** login page CSS **/
+
+#test-login .mat-form-field-appearance-legacy.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+  display: none;
+}
+
+#test-login .flex-layout .mat-form-field-underline {
+  display: none;
+}
+
+#test-login .mat-select-value {
+  color: #0C479D;
+}
+
+#test-login .mat-form-field-label-wrapper label {
+  color: #0C479D;
+}
+
+.mat-card-header {
+  flex: 1;  
+}
+
+.mat-card-content {
+  flex: 1;  
+  justify-content:flex-start;
+}
+
+.container {
+  max-width:900px;
+  margin:0 auto;
+  display:flex;
+}
+
+
+
+
